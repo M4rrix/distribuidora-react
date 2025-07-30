@@ -1,0 +1,161 @@
+.carrito {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-top: 2px solid #F7C93B;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.carrito p {
+    text-align: center;
+    color: #007BFF;
+}
+
+.carrito-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre los elementos */
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.carrito-item p {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    overflow: hidden; /* Oculta el texto extra */
+    
+}
+
+.carrito-item button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.carrito-item button:hover {
+    background-color: #ddd;
+}
+
+.btn-whatsapp {
+    display: inline-block; /* Hace que el botón solo ocupe el tamaño del contenido */
+    width: auto; /* Ajusta el ancho al contenido */
+    padding: 0.75rem 1.5rem;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+@media (max-width: 768px) {
+
+      .carrito-container {
+        width: 90%;
+    }
+}
+
+
+/* Carrito /
+.carrito {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-top: 2px solid #F7C93B;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.carrito h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.carrito-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre los elementos /
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.carrito-item p {
+    flex: 1; /* Ocupa todo el espacio disponible /
+    overflow: hidden; /* Oculta el texto extra /
+    
+}
+
+.carrito-item button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.carrito-item button:hover {
+    background-color: #ddd;
+}
+
+.btn-whatsapp {
+    display: inline-block; /* Hace que el botón solo ocupe el tamaño del contenido /
+    width: auto; /* Ajusta el ancho al contenido /
+    padding: 0.75rem 1.5rem;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.carrito-botones {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .carrito-container {
+        width: 90%;
+    }
+}
+
+*/

@@ -1,0 +1,195 @@
+
+.marca-select {
+    width: 100%;
+    max-width: 300px;  /* Limita el tamaño máximo */
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño */
+}
+    
+
+/* Productos */
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left; /* cambia a izquierda para legibilidad */
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%; /* asegura altura uniforme */
+}
+
+.producto h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  color: #333;
+  text-align: center; /* solo el título centrado */
+}
+
+.producto p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.producto p strong {
+  color: #222;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.producto h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+  height: 2.6em; /* para mantener altura fija y evitar saltos visuales */
+  overflow: hidden;
+}
+
+.producto .precio {
+  color: #f4b400; /* amarillo similar al logo */
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.producto .sku {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+
+
+.btn-agregar {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  margin-top: auto; /* se empuja abajo */
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.btn-agregar:hover {
+  background-color: #0056b3;
+}
+
+.producto p.description {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* máximo 4 líneas */
+  -webkit-box-orient: vertical;
+}
+
+
+@media (max-width: 768px) {
+    /* Productos */
+    .productos-container {
+        grid-template-columns: 1fr;  /* Una sola columna en pantallas pequeñas */
+    }
+
+    .producto {
+        max-width: 100%; /* Asegura que los productos ocupen todo el espacio disponible */
+    }
+
+    .marca-select {
+        width: 100%;
+        max-width: 100%;  /* El selector también debe ocupar el 100% */
+    }
+
+  }
+
+
+
+
+
+/* 📦 Producto.css - Tarjeta individual de producto /
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/* 🟠 Botón "Añadir" /
+.btn-agregar {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.btn-agregar:hover {
+  background-color: #0056b3;
+}
+
+/* 🟢 Selector de marca /
+.marca-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 📱 Responsive /
+@media (max-width: 768px) {
+  .producto {
+    max-width: 100%;
+  }
+
+  .marca-select {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+*/

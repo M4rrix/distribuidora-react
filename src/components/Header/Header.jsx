@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { FaShoppingCart, FaEnvelope } from "react-icons/fa";
 
 const Header = () => {
   const [menuActivo, setMenuActivo] = useState(false); //Crear estado para saber si el menu esta activo o no 
@@ -12,7 +13,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <img src="/img/logo.jpeg" alt="Distribuidora El Sol" className="header-logo" />
+        <img src="../../../public/logo/logo.jpeg" alt="Distribuidora El Sol" className="header-logo" />
       </div>
 
       <button className="menu-toggle" onClick={toggleMenu}>
@@ -23,8 +24,9 @@ const Header = () => {
         <ul className={`nav-links ${menuActivo ? "active" : ""}`}> {/*aplica la clase active solo si el menú está activo*/}
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/productos">Productos</Link></li>
-          <li><Link to="/carrito"><i className="fas fa-shopping-cart"></i></Link></li>
-          <li><Link to="/contacto"><i className="fas fa-envelope"></i></Link></li>
+          <li><Link to="/registro">Registro</Link></li>
+          <li><Link to="/carrito"><FaShoppingCart /></Link></li> {/*instale npm react-icons */}
+          <li><Link to="/contacto"><FaEnvelope /></Link></li>
         </ul>
       </nav>
     </header>

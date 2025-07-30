@@ -1,0 +1,15 @@
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el grid horizontalmente */
+}
+
+/* 📱 Móvil: una sola columna */
+@media (max-width: 768px) {
+  .productos-container {
+    grid-template-columns: 1fr;
+  }
+}

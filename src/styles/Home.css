@@ -1,0 +1,243 @@
+/* Categorías */
+
+
+
+.categoria {
+    margin-bottom: 2rem;
+}
+
+.categorias-container {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Asegurar que el buscador y las categorías siempre sean visibles */
+.buscador-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.categorias-container button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #F1A948;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.categorias-container button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.categorias-container button:active {
+    transform: scale(0.95);
+}
+
+
+.categoria h2 {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.categorias-container button.activo {
+    background-color: #F1A948;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #0b3d1a;
+}
+
+/* Productos */
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;  /* Limita el ancho máximo para que no se expanda demasiado */
+    margin: auto;  /* Centra el contenedor */
+}
+
+.producto {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+   /* background-color: #f9f9f9; */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+    
+}
+
+
+.producto:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.btn-agregar {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #0056b3;
+}
+
+/* Carrito */
+.carrito {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-top: 2px solid #F7C93B;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.carrito h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.carrito-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre los elementos */
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.carrito-item p {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    overflow: hidden; /* Oculta el texto extra */
+    
+}
+
+.carrito-item button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.carrito-item button:hover {
+    background-color: #ddd;
+}
+
+
+.btn-whatsapp {
+    display: inline-block; /* Hace que el botón solo ocupe el tamaño del contenido */
+    width: auto; /* Ajusta el ancho al contenido */
+    padding: 0.75rem 1.5rem;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+@media (max-width: 768px) { 
+     .productos-container {
+        grid-template-columns: 1fr;  /* Una sola columna en pantallas pequeñas */
+    }
+
+    .producto {
+        max-width: 100%; /* Asegura que los productos ocupen todo el espacio disponible */
+    }
+
+    .marca-select {
+        width: 100%;
+        max-width: 100%;  /* El selector también debe ocupar el 100% */
+    }
+
+     .categorias-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los botones pasen a otra línea si no caben */
+        justify-content: center;
+        gap: 5px; /* Espaciado entre botones */
+        padding: 10px;
+    }
+
+    .categorias-container button {
+        flex: 1 1 calc(50% - 10px); /* Distribuye los botones en dos columnas en móviles */
+        min-width: 120px; /* Evita que sean demasiado pequeños */
+        text-align: center;
+        padding: 8px; /* Ajusta el padding */
+    }
+
+    .carrito-container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    .buscador-container, .categorias-container {
+        display: flex !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Ajuste general para mantener alineación */
+@media (min-width: 1025px) {
+    .categorias-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .categorias-container button {
+        flex: 0 1 auto;
+        min-width: 150px;
+    }
+}

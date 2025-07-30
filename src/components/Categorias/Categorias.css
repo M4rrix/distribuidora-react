@@ -1,0 +1,164 @@
+.categorias-container {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  
+}
+
+/* Asegurar que el buscador y las categorías siempre sean visibles */
+.buscador-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.categorias-container button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #F1A948;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.categorias-container button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.categorias-container button:active {
+    transform: scale(0.95);
+}
+
+
+.categoria h2 {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.categorias-container button.activo {
+    background-color: #F1A948;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #0b3d1a;
+}
+
+@media (max-width: 768px) {
+  .categorias-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los botones pasen a otra línea si no caben */
+        justify-content: center;
+        gap: 5px; /* Espaciado entre botones */
+        padding: 10px;
+    }
+
+    .categorias-container button {
+        flex: 1 1 calc(50% - 10px); /* Distribuye los botones en dos columnas en móviles */
+        min-width: 120px; /* Evita que sean demasiado pequeños */
+        text-align: center;
+        padding: 8px; /* Ajusta el padding */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .categorias-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .categorias-container button {
+        flex: 1 1 auto;
+        min-width: 150px;
+    }
+}
+
+@media (min-width: 769px) {
+    .categorias-container {
+        display: flex !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+/* 📁 Categorias.css /
+
+.categorias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 130px;
+}
+
+.categorias-container button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #F1A948;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  min-width: 120px;
+  text-align: center;
+}
+
+.categorias-container button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.categorias-container button:active {
+  transform: scale(0.95);
+}
+
+.categorias-container button.activo {
+  background-color: #F1A948;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #0b3d1a;
+}
+
+/* Responsive: dos columnas en móviles /
+@media (max-width: 768px) {
+  .categorias-container button {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+/* Tablet /
+@media (min-width: 769px) and (max-width: 1024px) {
+  .categorias-container button {
+    flex: 1 1 auto;
+    min-width: 150px;
+  }
+}
+
+/* Desktop /
+@media (min-width: 1025px) {
+  .categorias-container {
+    gap: 15px;
+  }
+
+  .categorias-container button {
+    flex: 0 1 auto;
+    min-width: 150px;
+  }
+}
+
+*/

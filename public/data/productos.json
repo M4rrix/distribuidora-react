@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Papel Higiénico",
+        "precio":"3000",
+        "imagen": "/img/papelhigienico.jpeg",
+        "category": "Papel Higiénico",
+        "description": "Papel higiénico suave, ideal para el uso diario en el hogar o la oficina.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 2,
+        "title": "Papel Higiénico Doble",
+        "precio":"3000",
+        "imagen": "/img/ayudin.jpg",
+        "category": "Papel Higiénico",
+        "description": "Papel higiénico doble hoja para mayor absorción y confort.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 3,
+        "title": "Papel Higiénico Doble Hoja",
+        "precio":"3000",
+        "imagen": "/img/papelhigienico.jpeg",
+        "category": "Papel Higiénico",
+        "description": "Rollo de papel higiénico doble hoja, resistente y rendidor.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 4,
+        "title": "Plato descartable",
+        "precio":"2000",
+        "imagen": "/img/platodescartable.png",
+        "category": "Plásticos",
+        "description": "Platos descartables de plástico ideales para eventos y reuniones.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 5,
+        "title": "Plato descartable",
+        "precio":"2000",
+        "imagen": "/img/platodescartable.png",
+        "category": "Plásticos",
+        "description": "Platos descartables resistentes, prácticos y fáciles de usar.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 6,
+        "title": "Plato descartable",
+        "precio":"2000",
+        "imagen": "/img/platodescartable.png",
+        "category": "Plásticos",
+        "description": "Paquete de platos descartables aptos para comidas frías o calientes.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 7,
+        "title": "Lavandina concentrada",
+        "precio":"1000",
+        "imagen": "/img/ayudin.jpg",
+        "category": "Desinfectantes",
+        "description": "Lavandina concentrada ideal para limpieza y desinfección de superficies.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 8,
+        "title": "Lavandina concentrada",
+        "precio":"1000",
+        "imagen": "/img/ayudin.jpg",
+        "category": "Desinfectantes",
+        "description": "Desinfectante líquido con poder bactericida y removedor de manchas.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 9,
+        "title": "Lavandina concentrada",
+        "precio":"1000",
+        "imagen": "/img/ayudin.jpg",
+        "category": "Desinfectantes",
+        "description": "Producto multiuso para desinfección de baños, cocinas y pisos.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    },
+    {
+        "id": 10,
+        "title": "Lavandina concentrada",
+        "precio":"1000",
+        "imagen": "/img/ayudin.jpg",
+        "category": "Desinfectantes",
+        "description": "Lavandina de alta concentración para uso profesional y doméstico.",
+        "marcas": ["Marca A", "Marca B", "Marca C"]
+    }
+]

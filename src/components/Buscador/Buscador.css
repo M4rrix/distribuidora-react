@@ -1,0 +1,52 @@
+/* 🎯 Buscador.css - Estilos del componente Buscador */
+
+.buscador-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buscador-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.buscador-input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.sugerencias-container {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.sugerencia-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sugerencia-item:hover {
+  background: #f0f0f0;
+}
+
+
+@media (min-width: 769px) {
+    .buscador-container {
+        display: flex !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
