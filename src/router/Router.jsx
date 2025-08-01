@@ -24,7 +24,7 @@ const Router = () => {
               <Route 
                 path="/carrito" 
                 element={ 
-                  <ProtectedRoute> {/* ProtectedRoute bloquea /carrito (y las que añadas) si no hay sesión. */}
+                  <ProtectedRoute> {/* ProtectedRoute bloquea /carrito (y las que añada) si no hay sesión. */}
                     <Carrito />
                   </ProtectedRoute>
               } 

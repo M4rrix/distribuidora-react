@@ -1,5 +1,5 @@
-//Crear un AuthContext nos permitirá compartir el usuario logueado por toda la app.
-// src/context/AuthContext.jsx
+//Crear un AuthContext nos permite compartir el usuario logueado por toda la app.
+
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { auth } from "../../firebase";
 import { onAuthStateChanged } from "firebase/auth";

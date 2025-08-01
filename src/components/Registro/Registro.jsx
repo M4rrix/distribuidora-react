@@ -1,6 +1,6 @@
-// src/views/Register/Register.jsx
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";                 // ← Importa Link
+import { Link } from "react-router-dom";                 // Importa Link
 import { auth, db } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
@@ -31,7 +31,7 @@ const Register = () => {
         form.password
       );
 
-      // 📄 Guardar datos extra en Firestore
+      // Guardar datos extra en Firestore
       await setDoc(doc(db, "users", user.uid), {
         firstName: form.firstName,
         lastName: form.lastName,
@@ -49,7 +49,7 @@ const Register = () => {
       } else {
         setError(`Error: ${err.code} — ${err.message}`);
       }
-    }   // ← Aquí cierra el catch
+    }   //  cierra el catch
 
     // no hace falta más código después del catch
   };

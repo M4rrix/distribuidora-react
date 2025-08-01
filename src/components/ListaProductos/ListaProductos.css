@@ -7,7 +7,7 @@
   margin: 0 auto; /* Centra el grid horizontalmente */
 }
 
-/* 📱 Móvil: una sola columna */
+/* una sola columna */
 @media (max-width: 768px) {
   .productos-container {
     grid-template-columns: 1fr;
