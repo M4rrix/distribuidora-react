@@ -1,0 +1,22 @@
+
+
+/* html y body ocupen todo el alto */
+html, 
+body, 
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/*Contenedor principal en columna */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;        /* toma toda la altura de la ventana */
+}
+
+/*El main crece para llenar el espacio disponible */
+.content {
+  flex: 1;                  /* hace que crezca para empujar el footer al fondo */
+  padding-top: 100px;       
+}

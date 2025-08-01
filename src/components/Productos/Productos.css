@@ -116,7 +116,7 @@
 
     .marca-select {
         width: 100%;
-        max-width: 100%;  /* El selector también debe ocupar el 100% */
+        max-width: 100%;  /* El selector también tiene q ocupar el 100% */
     }
 
   }

@@ -23,8 +23,9 @@ const Header = () => {
       <nav>
         <ul className={`nav-links ${menuActivo ? "active" : ""}`}> {/*aplica la clase active solo si el menú está activo*/}
           <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/productos">Productos</Link></li>
+         {/* <li><Link to="/productos">Productos</Link></li>*/}
           <li><Link to="/registro">Registro</Link></li>
+          <li><Link to="/login">Login</Link></li>          
           <li><Link to="/carrito"><FaShoppingCart /></Link></li> {/*instale npm react-icons */}
           <li><Link to="/contacto"><FaEnvelope /></Link></li>
         </ul>

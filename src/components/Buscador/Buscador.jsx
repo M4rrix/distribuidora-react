@@ -15,14 +15,14 @@ const Buscador = ({ busqueda, setBusqueda, productos }) => {
 
     const sugerenciasFiltradas = productos.filter(
       (p) =>
-        p.nombre.toLowerCase().includes(valor) ||
-        p.categoria.toLowerCase().includes(valor)
+        p.title.toLowerCase().includes(valor) ||
+        p.category.toLowerCase().includes(valor)
     );
     setSugerencias(sugerenciasFiltradas.slice(0, 5));
   };
 
-  const seleccionarSugerencia = (nombre) => {
-    setBusqueda(nombre);
+  const seleccionarSugerencia = (title) => {
+    setBusqueda(title);
     setSugerencias([]);
   };
 
@@ -38,12 +38,10 @@ const Buscador = ({ busqueda, setBusqueda, productos }) => {
     {sugerencias.length > 0 && (
       <div className="sugerencias-container">
         {sugerencias.map((producto) => (
-          <div
-            key={producto.id}
-            className="sugerencia-item"
-            onClick={() => seleccionarSugerencia(producto.nombre)}
-          >
-            {producto.nombre} ({producto.categoria})
+          <div key={producto.id} 
+          className="sugerencia-item" 
+          onClick={() => seleccionarSugerencia(producto.title)}>
+            {producto.title} ({producto.category})
           </div>
         ))}
       </div>
