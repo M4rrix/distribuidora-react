@@ -20,7 +20,7 @@ const Producto = ({ producto }) => {
       <img src={producto.imagen} alt={producto.title} />
       <h3>{producto.title}</h3>
       <p className="precio">$ {producto.precio}</p>
-      <p className="sku">SKU: {producto.id}</p>
+      <p className="sku">SKU: {producto.sku}</p>
       <p className="description"> {producto.description}</p>
       <select
         className="marca-select"

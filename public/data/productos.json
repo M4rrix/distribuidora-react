@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "sku": "PHG-001",
         "title": "Papel Higiénico",
         "precio":"3000",
         "imagen": "/img/papelhigienico.jpeg",
@@ -9,7 +9,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 2,
+        "sku": "PHG-002",
         "title": "Papel Higiénico Doble",
         "precio":"3000",
         "imagen": "/img/ayudin.jpg",
@@ -18,7 +18,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 3,
+        "sku": "PHG-003",
         "title": "Papel Higiénico Doble Hoja",
         "precio":"3000",
         "imagen": "/img/papelhigienico.jpeg",
@@ -27,7 +27,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 4,
+        "sku": "PHG-004",
         "title": "Plato descartable",
         "precio":"2000",
         "imagen": "/img/platodescartable.png",
@@ -36,7 +36,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 5,
+        "sku": "PHG-005",
         "title": "Plato descartable",
         "precio":"2000",
         "imagen": "/img/platodescartable.png",
@@ -45,7 +45,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 6,
+        "sku": "PHG-006",
         "title": "Plato descartable",
         "precio":"2000",
         "imagen": "/img/platodescartable.png",
@@ -54,7 +54,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 7,
+        "sku": "PHG-007",
         "title": "Lavandina concentrada",
         "precio":"1000",
         "imagen": "/img/ayudin.jpg",
@@ -63,7 +63,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 8,
+        "sku": "PHG-008",
         "title": "Lavandina concentrada",
         "precio":"1000",
         "imagen": "/img/ayudin.jpg",
@@ -72,7 +72,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 9,
+        "sku": "PHG-009",
         "title": "Lavandina concentrada",
         "precio":"1000",
         "imagen": "/img/ayudin.jpg",
@@ -81,7 +81,7 @@
         "marcas": ["Marca A", "Marca B", "Marca C"]
     },
     {
-        "id": 10,
+        "sku": "PHG-0010",
         "title": "Lavandina concentrada",
         "precio":"1000",
         "imagen": "/img/ayudin.jpg",
